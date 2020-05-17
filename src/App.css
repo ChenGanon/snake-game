@@ -96,12 +96,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', end
   width: 350px;
   position: absolute;
   right: 0;
-  top: 200px;
+  bottom: 0;
+
 }
 
 .imgGame{
   width: 270px;
   position: relative;
   left: 150px;
+  bottom: 0;
 
 }

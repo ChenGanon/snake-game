@@ -167,7 +167,7 @@ class Game extends Component {
 
   render() {
     return (
-      <>
+      <div style={{height:'100vh'}}>
       <div className="game-area">
         <div className='row'>
           
@@ -194,7 +194,7 @@ class Game extends Component {
             <img src={SnakeImage} alt="snake" className='imgGame' />
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }
