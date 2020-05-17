@@ -1,38 +1,107 @@
-.App {
+*{
+  overflow: hidden;
+}
+
+body{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d2ff52+61,91e842+90,91e842+90 */
+background: #d2ff52; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #d2ff52 61%, #91e842 90%, #91e842 90%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #d2ff52 61%,#91e842 90%,#91e842 90%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #d2ff52 61%,#91e842 90%,#91e842 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+
+.game-area{
+  position: relative;
+  margin: 2% 2% 2% 25%; 
+  width: 500px;
+  height: 500px;
+  float: left;
+  border: 2px solid #000;
+  background-color: rgba(21, 204, 36,0.5)
+}
+
+.buttons{
+  position: relative;
+  top: 40vh;
+  z-index: 99;
+
+}
+
+.new-game, .back{
+  width: 150px;
+  background-color: rgb(65, 233, 115);
+  border:1px solid #000
+}
+
+.back{
+  margin-top: 10px;
+}
+
+.points{
+  padding-top: 45%;
+  padding-left: 50%;
+  font-size: 40px;
+  
+}
+
+.end-game{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+  padding: 0;
+  margin: 0 auto;
+  
+  
+}
+
+.snake-dot{
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: #000;
+  border:1px solid #fff;
+  z-index: 2;
+}
+
+.snake-food{
+  position:absolute;
+  width: 2%;
+  height: 2%;
+  background-color: red;
+  border:1px solid #fff;
+  z-index: 1;
+}
+
+.home{
+  height: 100vh;
+  margin: 10vh auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home h1{
+  margin-bottom: 50px;
+}
+.home .btn{
+  background-color: #91e842;
+  margin-bottom: 12px;
+  width: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img{
+  width: 350px;
+  position: absolute;
+  right: 0;
+  top: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.imgGame{
+  width: 270px;
+  position: relative;
+  left: 150px;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
